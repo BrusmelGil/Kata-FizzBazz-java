@@ -7,6 +7,8 @@ public class FizzBuzz {
 
         boolean isDivisibleBy3 = numb % 3 == 0;
         boolean isDivisibleBy5 = numb % 5 == 0;
+    
+        
 
 
         if (isDivisibleBy3) return "Fizz";
@@ -14,14 +16,15 @@ public class FizzBuzz {
         if (isDivisibleBy5) return "Buzz";
 
         if (isDivisibleBy3 && isDivisibleBy5) return "FizzBuzz";
-
-
         return null;
+
+        
+        }
+
+
+        
 
         
     }
 
 
-    
-
-}

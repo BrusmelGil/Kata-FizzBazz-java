@@ -36,8 +36,18 @@ public class FizzBuzzTest {
 
     assertEquals("Buzz", word);
     }
+    
 
+    @Test
+    public void test_fizzbuzzreplaceNumber_canReturnDivisiblePor3Y5() {
+        int number = 15;
+        FizzBuzz fizzBuzz = new FizzBuzz();
 
+        String word = fizzBuzz.replaceNumber(number);
+
+        assertEquals("FizzBuzz",word);
+
+    }
 
 
 }
