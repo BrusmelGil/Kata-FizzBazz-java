@@ -2,33 +2,20 @@ package com.fizzbuzz;
 
 public class FizzBuzz {
 
-    private int number;
+    public String replaceNumber(int numb) {
 
-    public FizzBuzz(int number) {
-        this.number = number;
+        boolean isDivisibleBy3 = numb % 3 == 0;
+        boolean isDivisibleBy5 = numb % 5 == 0;
+
+        if (isDivisibleBy3 && isDivisibleBy5) return "FizzBuzz";
+        if (isDivisibleBy3) return "Fizz";
+        if (isDivisibleBy5) return "Buzz";
+
+        return String.valueOf (numb);
+    
     }
+    
 
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
-    public String fizzBuzz () {
-        if(this.number % 3 == 0 && this.number % 5 == 0){
-            return "fizzbuzz";
-        }
-
-        if(this.number % 3 == 0){
-            return "fizz";
-        }
-        if(this.number % 5 == 0){
-            return "buzz";
-        }
-        return String.valueOf(this.number);
-    }
     
     }
 
