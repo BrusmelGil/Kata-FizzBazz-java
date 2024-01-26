@@ -45,19 +45,6 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz", word);
     }
 
-    @Test
-    public void test_fizzbuzzReplaceNumber_() {
-        // Given
-        int numb = 8;
-        FizzBuzz fizzBuzz = new FizzBuzz();
-
-        // When
-        String word = fizzBuzz.replaceNumber (numb);
-
-        // Then 
-        assertEquals(String.valueOf(numb), word);
-    }
-
 
     @Test
     public void test_fizzbuzzReplaceNumber_DevuelveNumbAnterior() {
